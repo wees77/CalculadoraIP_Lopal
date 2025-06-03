@@ -26,7 +26,7 @@ public class TelaCalculadora extends JFrame {
         inputField = new JTextField(20);
         JButton calcularBtn = new JButton("Calcular");
 
-        inputPanel.add(new JLabel("Digite o IP com máscara (ex: 192.168.1.0/26):"));
+        inputPanel.add(new JLabel("Digite o IP com máscara (ex: xxx.xxx.x.x/xx):"));
         inputPanel.add(inputField);
         inputPanel.add(calcularBtn);
 
