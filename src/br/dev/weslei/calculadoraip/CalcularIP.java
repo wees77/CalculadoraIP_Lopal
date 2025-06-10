@@ -66,19 +66,18 @@ public class CalcularIP {
         return octeto1 + "." + octeto2 + "." + octeto3 + "." + octeto4;
     }
 
-    public String getIPBinario() {
-        String[] octetos = ip.split("\\.");
+    public String getMascaraBinario() {
         StringBuilder binario = new StringBuilder();
-
-        for (int i = 0; i < octetos.length; i++) {
-            int valor = Integer.parseInt(octetos[i]);
-            String bin = String.format("%8s", Integer.toBinaryString(valor)).replace(' ', '0');
-            binario.append(bin);
-            if (i < octetos.length - 1) {
+        for (int i = 0; i < 32; i++) {
+            if (i < cidr) {
+                binario.append("1");
+            } else {
+                binario.append("0");
+            }
+            if ((i + 1) % 8 == 0 && (i + 1) < 32) { // Adiciona um ponto a cada 8 bits (um octeto)
                 binario.append(".");
             }
         }
-
         return binario.toString();
     }
 

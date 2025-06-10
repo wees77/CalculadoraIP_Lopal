@@ -12,5 +12,7 @@ Este projeto é uma Calculadora de IP desenvolvida em Java, que agora conta com 
 * Lista detalhes completos de cada sub-rede, incluindo endereço da rede, primeiro/último IP utilizável e endereço de broadcast.
 * Estilo Moderno: Tenta aplicar o tema visual Nimbus para uma melhor experiência.
 
+Autor: Weslei Santos
+
 
 ![Texto Alternativo](image/1.png)

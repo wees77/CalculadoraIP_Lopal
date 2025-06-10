@@ -16,7 +16,7 @@ public class Main {
             System.out.println("CIDR: /" + calc.getCidr());
             System.out.println("Classe: " + calc.getClasse());
             System.out.println("Máscara decimal: " + calc.getMascaraDecimal());
-            System.out.println("Máscara em binário: " + calc.getIPBinario());
+            System.out.println("Máscara em binário: " + calc.getMascaraBinario());
 
             int numRedes = calc.getNumeroDeRedes();
             if (numRedes == -1) {
