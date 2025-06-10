@@ -73,7 +73,7 @@ public class TelaCalculadora extends JFrame {
             outputArea.append("CIDR: /" + calc.getCidr() + "\n");
             outputArea.append("Classe: " + calc.getClasse() + "\n");
             outputArea.append("Máscara decimal: " + calc.getMascaraDecimal() + "\n");
-            outputArea.append("IP em binário: " + calc.getMascaraBinario() + "\n");
+            outputArea.append("Máscara em binário: " + calc.getMascaraBinario() + "\n");
 
             int numRedes = calc.getNumeroDeRedes();
             if (numRedes == -1) {
